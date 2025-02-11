@@ -21,6 +21,17 @@ To give your project a background in the portfolio page, just add the img tag to
     img: /assets/img/12.jpg
     ---
 
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/projects/jaco_table_environment/IMG_3819 (1).jpg" title="Final Table" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This is what the final project ended up looking like.
+</div>
+ Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -33,16 +44,11 @@ To give your project a background in the portfolio page, just add the img tag to
     </div>
 </div>
 <div class="caption">
+    
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
 Say you wanted to write a bit about your project before you posted the rest of the images.
@@ -158,17 +164,13 @@ This robotic arm learning environment is now fully operational and provides a **
 The following images showcase different stages of the project, from **assembly to final integration**.
 
 #### 📷 **Workspace Construction**
-![Building the Table](assets/projects/jaco_table_environment/IMG_3649.jpg)
-![Frame Assembly](assets/projects/jaco_table_environment/IMG_3453.jpg)
-![Mounting the Work Surface](assets/projects/jaco_table_environment/IMG_3716.jpg)
+![Building the Table](assets/img/rojects/jaco_table_environment/IMG_3649.jpg)
+![Frame Assembly](assets/img/projects/jaco_table_environment/IMG_3453.jpg)
+![Mounting the Work Surface](assets/img/projects/jaco_table_environment/IMG_3716.jpg)
 
 #### 🤖 **Robotic Arm Integration**
-![JACO Arm Installed](assets/projects/jaco_table_environment/IMG_3798.jpg)
-![Testing with Intel RealSense](assets/projects/jaco_table_environment/IMG_3819.jpg)
-![Final Setup with Computer](assets/projects/jaco_table_environment/IMG_4481.jpg)
+![JACO Arm Installed](assets/img/projects/jaco_table_environment/IMG_3798.jpg)
+![Testing with Intel RealSense](assets/img/projects/jaco_table_environment/IMG_3819.jpg)
+![Final Setup with Computer](assets/img/projects/jaco_table_environment/IMG_4481.jpg)
 
 This marks the **completion of the build**, but research and experiments on this **JACO Arm Environment** will continue. 🚀
-
----
-
-This blog post provides an **overview of the process**, from **design to execution**, and will be updated as further refinements are made. Stay tuned for **software optimizations** and **new experiments**! 🚀
