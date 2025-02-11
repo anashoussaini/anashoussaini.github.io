@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 7
-description: with background image
+title: Real Robot Arm Environment
+description: Custom Robot Arm Env for Real Data Collection/Policy Deployment.
 img: assets/img/4.jpg
-importance: 1
+importance: 2
 category: work
-related_publications: true
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.
@@ -65,17 +65,110 @@ Just wrap your images with `<div class="col-sm">` and place them inside `<div cl
 To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
 Here's the code for the last row of images above:
 
-{% raw %}
+I'll create a blog post based on your requirements, detailing the process of designing and building the robotic arm environment. It will follow a structured format covering the design phase, extrusion ordering, assembly, wood cutting and drilling, lighting, electrical setup, safety measures, and software integration using ROS1, Rviz, and Intel RealSense cameras.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+I'll also ensure the images are placed under `assets/projects/jaco_table_environment/` in the blog post structure.
 
-{% endraw %}
+### Blog Structure:
+1. **Introduction** – Overview of the project
+2. **Design Phase** – Planning and CAD modeling
+3. **Ordering and Preparing Materials** – Extrusions, boards, screws, and metal plate
+4. **Assembly of the Table** – Putting extrusions together, securing the board
+5. **Electrical and Safety Components** – Adding power, safety button, and lighting
+6. **Software Integration** – ROS1, Rviz, 3D depth mapping, and interactive arm control
+7. **Final Setup and Testing** – Running the environment and optimizing performance
+
+I'll now draft the blog post. Stay tuned!
+
+# **Building a Robotic Arm Learning Environment with JACO Arms**
+
+## **Introduction**
+The goal of this project was to design and construct a modular learning environment for robotic arms, specifically using **JACO Arms**. This environment serves as a **real-world testing ground** for robotics research, featuring **precision machining**, a **structured workspace**, **safety measures**, and a **dedicated computing system** for control and visualization. 
+
+This blog post documents the **design process**, **construction steps**, and **software integration** using **ROS1**, **Rviz**, and **Intel RealSense 435i cameras** to create a **3D depth map** for robotic control.
+
+---
+
+## **1. Design and Planning Phase**
+The first step involved designing the **workspace layout**. This included:
+- **CAD modeling** of the table structure using **4080 aluminum extrusions**.
+- Planning the **mounting points** for the JACO robotic arm.
+- Ensuring the work surface could **accommodate various robotics experiments**.
+
+A critical component was integrating a **metal plate with M8 aluminum holes**, similar to an **optical table**, for **precision positioning**.
+
+---
+
+## **2. Ordering and Preparing Materials**
+To build the setup, we sourced the following components:
+- **4080 Aluminum Extrusions** (to form the table frame)
+- **Pre-cut Wood Panel** (for the main surface)
+- **M8 Hole Aluminum Plate** (for robotic arm mounting)
+- **Counterbore Screws** (for flush attachment)
+- **Power Strip and Safety Button** (for electrical safety)
+- **Intel RealSense 435i Cameras** (for 3D depth sensing)
+- **Dedicated Computing System** (to run the robotics environment on ROS1)
+
+---
+
+## **3. Assembling the Table**
+Once the materials arrived, the next step was assembling the **structural frame**:
+- Connecting the **4080 extrusions** using **corner brackets**.
+- Ensuring **stability** using **reinforcement plates**.
+- Mounting the **wooden tabletop**, ensuring that counterbore screws fit **flush** with the surface.
+
+### **Drilling and Mounting**
+- Drilled precise **holes** in the wood surface.
+- Aligned and attached the **M8 hole aluminum plate** to form the **robotic workspace**.
+- Ensured the **JACO Arm** had a **secure mounting point**.
+
+---
+
+## **4. Electrical & Safety Setup**
+To ensure a **safe and functional** workspace, we integrated:
+- **Lighting fixtures** for clear visibility.
+- **Power strip** mounted on the side.
+- **Emergency Stop Button** for immediate shutdown.
+- **Cable Management** to avoid clutter.
+
+---
+
+## **5. Software & Robotic Control**
+With the physical setup complete, we moved to software integration:
+- **Installed ROS1** on the dedicated machine.
+- Configured **Rviz** to visualize and interact with the **JACO arm**.
+- Used **Intel RealSense 435i cameras** to create a **3D depth map**.
+- Enabled **interactive control** of the robotic arm for research applications.
+
+---
+
+## **6. Final Testing & Optimization**
+- Verified the **stability of the robotic arm** under different loads.
+- Optimized the **depth sensing accuracy**.
+- Ran **various test scenarios** using **Rviz and ROS1**.
+
+---
+
+## **7. Conclusion**
+This robotic arm learning environment is now fully operational and provides a **structured, real-world workspace** for robotic research. By combining **precision engineering, safety measures, and software integration**, this setup enables advanced **robotic manipulation and 3D perception**.
+
+---
+
+### **Image Gallery**
+The following images showcase different stages of the project, from **assembly to final integration**.
+
+#### 📷 **Workspace Construction**
+![Building the Table](assets/projects/jaco_table_environment/IMG_3649.jpg)
+![Frame Assembly](assets/projects/jaco_table_environment/IMG_3453.jpg)
+![Mounting the Work Surface](assets/projects/jaco_table_environment/IMG_3716.jpg)
+
+#### 🤖 **Robotic Arm Integration**
+![JACO Arm Installed](assets/projects/jaco_table_environment/IMG_3798.jpg)
+![Testing with Intel RealSense](assets/projects/jaco_table_environment/IMG_3819.jpg)
+![Final Setup with Computer](assets/projects/jaco_table_environment/IMG_4481.jpg)
+
+This marks the **completion of the build**, but research and experiments on this **JACO Arm Environment** will continue. 🚀
+
+---
+
+This blog post provides an **overview of the process**, from **design to execution**, and will be updated as further refinements are made. Stay tuned for **software optimizations** and **new experiments**! 🚀
