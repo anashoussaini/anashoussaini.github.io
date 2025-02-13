@@ -17,7 +17,7 @@ To give your project a background in the portfolio page, just add the img tag to
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/jaco_table_environment/IMG_3819 (1).jpg" title="Final Table" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/IMG_3819 (1).jpg" title="Final Table" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -66,7 +66,7 @@ Here's the code for the last row of images above:
 
 I'll create a blog post based on your requirements, detailing the process of designing and building the robotic arm environment. It will follow a structured format covering the design phase, extrusion ordering, assembly, wood cutting and drilling, lighting, electrical setup, safety measures, and software integration using ROS1, Rviz, and Intel RealSense cameras.
 
-I'll also ensure the images are placed under `assets/projects/jaco_table_environment/` in the blog post structure.
+I'll also ensure the images are placed under `assets/` in the blog post structure.
 
 ### Blog Structure:
 1. **Introduction** – Overview of the project
@@ -157,13 +157,13 @@ This robotic arm learning environment is now fully operational and provides a **
 The following images showcase different stages of the project, from **assembly to final integration**.
 
 #### 📷 **Workspace Construction**
-![Building the Table](assets/img/rojects/jaco_table_environment/IMG_3649.jpg)
-![Frame Assembly](assets/img/projects/jaco_table_environment/IMG_3453.jpg)
-![Mounting the Work Surface](assets/img/projects/jaco_table_environment/IMG_3716.jpg)
+![Building the Table](assets/img/IMG_3649.jpg)
+![Frame Assembly](assets/img/IMG_3453.jpg)
+![Mounting the Work Surface](assets/img/IMG_3716.jpg)
 
 #### 🤖 **Robotic Arm Integration**
-![JACO Arm Installed](assets/img/projects/jaco_table_environment/IMG_3798.jpg)
-![Testing with Intel RealSense](assets/img/projects/jaco_table_environment/IMG_3819.jpg)
-![Final Setup with Computer](assets/img/projects/jaco_table_environment/IMG_4481.jpg)
+![JACO Arm Installed](assets/img/IMG_3798.jpg)
+![Testing with Intel RealSense](assets/img/IMG_3819.jpg)
+![Final Setup with Computer](assets/img/IMG_4481.jpg)
 
 This marks the **completion of the build**, but research and experiments on this **JACO Arm Environment** will continue. 🚀
