@@ -27,7 +27,7 @@ With that in mind, I decided to build a fully functional robot arm environment�
 
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/main_final_project.jpg" title="Final Table" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -46,7 +46,7 @@ You might be asking: “Why build a custom table/cage setup in the first place?�
 - **Scalability:** With a sturdy environment, you can keep adding sensors, extra arms, cameras, lights...
 
 
-<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3453.jpg" title="Initial Setup" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> The initial setup was unstable and posed safety risks. </div>
+<div class="row"> <div class="col-sm-4 mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3453.jpg" title="Initial Setup" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> The initial setup was unstable and posed safety risks. </div>
 
 
 
@@ -61,7 +61,7 @@ Money is scarce resources, especially in research where everybody complains abou
 **Online Tools**
 
 
-<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3483.jpg" title="Vention Design" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> Using Vention's online builder to design the frame. </div>
+<div class="row"> <div class="col-sm-4 mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3483.jpg" title="Vention Design" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> Using Vention's online builder to design the frame. </div>
 
 Even though you can totally draft this on paper (it’s just a table, not a rocket), I used [Vention’s online builder](https://www.vention.io/) to visualize my idea. It’s like if Canva and Fusion 360 had a baby specialized in industrial setups. They have all sorts of aluminum extrusion models and accessories so you can plan how everything will fit together in 3D. But be warned: **Vention itself can be pricey,** so I used it mainly as a design tool, then sourced the actual parts elsewhere. It was 3X more expensive...
 
@@ -77,7 +77,7 @@ Here’s what I used:
 - **8040 extrusions** (80 mm × 40 mm) for the horizontal perimeter beams of the table. These create the top frame that holds the tabletop.
 
 
-<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3647.jpg" title="Aluminum Extrusions Table" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> 8080 and 8040 aluminum extrusions used for the frame. </div>
+<div class="row"> <div class="col-sm-4 mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3647.jpg" title="Aluminum Extrusions Table" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> 8080 and 8040 aluminum extrusions used for the frame. </div>
 
 I chose 8080 for the legs because they can handle a lot of weight and vibration without wobbling. For attachments, I used **T-slot nuts** with ball bearings so that the connection stays snug and won’t shuffle around under stress. Then I used **corner brackets** wherever needed to ensure the frame remained rigid. I also had two 4040 pillars go through the middle so that it limits the table top wobbling.
 
@@ -102,7 +102,7 @@ Because the cage doesn’t bear much weight or stress, I used **4040 extrusions*
 For the tabletop, I grabbed a **thick plywood sheet**. Don’t skimp here; you want something that can handle repeated drilling, screwing, and the weight of your robot without warping. I had my university’s workshop cut it to the exact dimensions I needed.
 
 
-<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3760.jpg" title="Tabletop Installation" class="img-fluid rounded z-depth-1" %} </div> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/table_cage.jpg" title="Table Cage" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> Kinova Jaco arms mounted securely with proper power distribution. </div>
+<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/IMG_3760.jpg" title="Tabletop Installation" class="img-fluid rounded z-depth-1" %} </div> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/table_cage.jpg" title="Table Cage" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> Table top assembled and the Table Cage. </div>
 
 
 
@@ -120,7 +120,7 @@ I used a **step drill bit** to create funnel-shaped holes in the plywood, allowi
 I attached a **12-outlet power strip** along one side of the table. This is a total lifesaver. Robotics experiments inevitably lead to connecting lots of devices like arms, sensors, lights, single-board computers, you name it. Having a big, well-secured power strip means everything is accessible and you’re not tripping over extension cords.
 
 
-<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/kill_switch_button.jpg" title="Kill Switch and Power Extension" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> 8080 and 8040 aluminum extrusions used for the frame. </div>
+<div class="row"> <div class="col-sm mt-3 mt-md-0"> {% include figure.liquid loading="eager" path="assets/img/kill_switch_button.jpg" title="Kill Switch and Power Extension" class="img-fluid rounded z-depth-1" %} </div> </div> <div class="caption"> Kill Switch and Power Extension. </div>
 
 
 
