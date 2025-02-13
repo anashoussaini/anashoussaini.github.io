@@ -4,7 +4,7 @@ title: Real Robot Arm Environment
 description: Custom Robot Arm Env for Real Data Collection/Policy Deployment.
 img: assets/img/main_final_project.jpg
 importance: 2
-category: work
+category: research
 related_publications: false
 ---
 
