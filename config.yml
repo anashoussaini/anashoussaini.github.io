@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://github.io/anashoussaini/"
+title: Anas Houssaini
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -9,28 +9,23 @@ pagination:
 
 taxonomies:
     tag: tags
+# we have to fix the menu
 
 menu:
     main:
-        - name: Books
-          url: books/
-          weight: 5 
         - name: Papers
           url: papers/
+          weight: 1
+        - name: Projects
+          url: projects/
           weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
         - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+          url: blog/
+          weight: 3
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
+    description: "This website hosts Achraf Anas El Houssaini's research papers, books, course materials, data, curriculum vitae, and contact information."
+    author: Achraf Anas El Houssaini
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -44,7 +39,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["papers","projects","blog"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -54,50 +49,30 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: Anas Houssaini
+          subtitle: "Hi, I am Anas Houssaini and I am a 1st year Computer Science Masters student studying AI/robotics at McGill University. I am advised by Professor David Meger and Professor Hsiu-chin Lin in the Mobile Robotics Lab (MRL).\n My research is driven by a singular obsession: figuring out how robots can build and adapt their own understanding of the world, something that evolves, learns, and gets closer to how humans process their surroundings. Right now, I'm particularly fascinated by bimanual dexterity, how two robotic arms can collaborate, coordinate, and assist each other to tackle complex tasks."
+          imageUrl: "picture.jpg"
           imageWidth: 160
           imageHeight: 160
           buttons:
             - name: Papers
               url: papers/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
+            - name: Projects
+              url: projects/
             - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+              url: blog/
 
     socialIcons:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+          url: mailto:elhoussainianas8@gmail.com
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=Hq0AYv8AAAAJ&hl=en
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
+          url: https://github.com/anashoussaini
         - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+          url: https://x.com/anashoussaini
 
     assets:
         disableScrollBarStyle: true
@@ -105,7 +80,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Anas Houssaini"
       icon: favicon.ico
       iconHeight: 18
 
@@ -115,7 +90,7 @@ markup:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: autumn 
+        style: autumn
     tableOfContents:
         endLevel: 2
         ordered: false
