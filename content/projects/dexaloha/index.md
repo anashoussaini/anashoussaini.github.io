@@ -6,7 +6,7 @@ author: ["Achraf Anas El Houssaini"]
 description: "Assembling and extending DexAloha, a ~$300 five-finger, cable-driven hand based on HOPE JR, with a custom wrist for the Kinova Jaco and a Hall-effect sensing glove."
 summary: "DexAloha is my build of the open-source HOPE JR hand: I assembled it, designed a custom motorized wrist that plugs into a Kinova Jaco, and (with Martino Russi) adopted an improved finger design that is easier to assemble and route cables through."
 cover:
-    image: "project_assets/front_view.png"
+    image: "project_assets/front_view.jpg"
     alt: "DexAloha hand"
     relative: true
 showToc: true
