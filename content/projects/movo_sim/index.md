@@ -1,6 +1,6 @@
 ---
 title: "MOVO in Simulation: Bridging Isaac Sim and the Real Lab"
-date: 2024-10-01
+date: 2025-01-01
 tags: ["robotics", "isaac sim", "simulation", "ros2", "movo", "kinova jaco"]
 author: ["Achraf Anas El Houssaini"]
 description: "Bringing the rebuilt MOVO and my real robot arm environment into Isaac Sim, and unifying everything under one simulation + hardware stack."

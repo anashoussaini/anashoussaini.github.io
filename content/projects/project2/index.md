@@ -1,6 +1,6 @@
 ---
 title: "MOVO 2.0: Rebuilding Bimanual Mobile Robot"
-date: 2024-06-01
+date: 2025-01-01
 tags: ["robotics", "mobile manipulation", "hardware", "kinova jaco", "reverse engineering"]
 author: ["Achraf Anas El Houssaini"]
 description: "Reviving a shelved $200k Kinova–Stanley prototype: smart‑battery handshake, base bring‑up, new neck, dual Jaco arms, ROS2, and on‑board AI."

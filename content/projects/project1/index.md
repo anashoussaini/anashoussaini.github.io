@@ -1,6 +1,6 @@
 ---
 title: "Real Robot Arm Environment"
-date: 2025-01-01
+date: 2024-12-01
 tags: ["robotics", "real robots", "hardware", "kinova jaco", "research"]
 author: ["Achraf Anas El Houssaini"]
 description: "Building a safe, stable, and flexible real-world robot arm environment for data collection and policy deployment."
