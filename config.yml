@@ -26,7 +26,7 @@ menu:
 params:
     description: "This website hosts Achraf Anas El Houssaini's research papers, books, course materials, data, curriculum vitae, and contact information."
     author: Achraf Anas El Houssaini
-    # googleAnalyticsID: "G-XXXXX"
+    googleAnalyticsID: "G-LE3F13RMP1"
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
@@ -50,7 +50,7 @@ params:
     profileMode:
           enabled: true
           title: Anas Houssaini
-          subtitle: "Hi, I am Anas Houssaini and I am a 1st year Computer Science Masters student studying AI/robotics at McGill University. I am advised by Professor David Meger and Professor Hsiu-chin Lin in the Mobile Robotics Lab (MRL).\n My research is driven by a singular obsession: figuring out how robots can build and adapt their own understanding of the world, something that evolves, learns, and gets closer to how humans process their surroundings. Right now, I'm particularly fascinated by bimanual dexterity, how two robotic arms can collaborate, coordinate, and assist each other to tackle complex tasks."
+          subtitle: "Hi, I am Anas Houssaini and I am a 2nd year Computer Science Masters student studying AI/robotics at McGill University. I am advised by Professor David Meger and Professor Hsiu-chin Lin in the Mobile Robotics Lab (MRL).\n My research is driven by a singular obsession: figuring out how robots can build and adapt their own understanding of the world, something that evolves, learns, and gets closer to how humans process their surroundings. Right now, I'm particularly fascinated by bimanual dexterity (particularly hand like robots), how two robotic arms can collaborate, coordinate, and assist each other to tackle complex tasks."
           imageUrl: "picture.jpg"
           imageWidth: 160
           imageHeight: 160
