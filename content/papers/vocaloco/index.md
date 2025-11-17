@@ -1,6 +1,6 @@
 ---
 title: "VOCALoco: Viability-Optimized Cost-aware Adaptive Locomotion"
-date: 2025-11-14
+date: 2025-06-14
 tags: ["robotics","legged robots","reinforcement learning","skill switching","staircases","perception","cost of transport"]
 author: Stanley Wu and Mohamad H. Danesh and Simon Li and Hanna Yurchyk and Amin Abyaneh and Anas El Houssaini and David Meger and Hsiu-Chin Lin
 description: "A modular skill-selection framework that predicts viability and cost-of-transport from heightmaps to safely and efficiently switch between walking and stair-climbing on quadrupedal robots."
