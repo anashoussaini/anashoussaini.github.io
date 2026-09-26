@@ -1,0 +1,20 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $dims := "" -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $img := . -}}
+    {{- if eq .ResourceType "image" -}}
+      {{- $sub := .MediaType.SubType -}}
+      {{- if ne $sub "svg" -}}
+        {{- if and (ne $sub "gif") (gt .Width 1440) }}{{ $img = .Resize "1440x webp" }}{{ end -}}
+        {{- $dims = printf ` width="%d" height="%d"` $img.Width $img.Height -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $src = $img.RelPermalink -}}
+    {{- with $u.RawQuery }}{{ $src = printf "%s?%s" $src . }}{{ end -}}
+    {{- with $u.Fragment }}{{ $src = printf "%s#%s" $src . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+<img loading="lazy" src="{{ $src }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ $dims | safeHTMLAttr }}>

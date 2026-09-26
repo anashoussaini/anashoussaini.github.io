@@ -1,0 +1,68 @@
+{{- define "main" }}
+{{- $m := .Params.media | default dict }}
+<article class="post-single paper-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{- with .Params.authors }}
+    <p class="paper-authors">{{ partial "paper_authors.html" $ }}</p>
+    {{- end }}
+    {{- if or .Params.venue .Params.venueNote }}
+    <p class="paper-venue">{{ with .Params.venue }}<strong>{{ . }}</strong>{{ end }}{{ with .Params.venueNote }} <span class="paper-venue-note">&middot; {{ . }}</span>{{ end }}</p>
+    {{- end }}
+    {{- with .Params.links }}
+    <p class="paper-links">
+      {{- range . }}{{ $l := . }}{{ with $l.url }}
+      <a href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>{{ $l.name | default . }}</a>
+      {{- end }}{{ end }}
+    </p>
+    {{- end }}
+  </header>
+
+  {{- $items := slice }}
+  {{- range $m.gallery }}
+  {{- $v := "" }}{{ with .video }}{{ $v = $.Resources.GetMatch . }}{{ end }}
+  {{- if $v }}
+  {{- $poster := "" }}{{ with .poster }}{{ $poster = $.Resources.GetMatch . }}{{ end }}
+  {{- $items = $items | append (dict "video" $v "poster" $poster "caption" .caption) }}
+  {{- end }}
+  {{- end }}
+
+  {{- if $items }}
+  <div class="paper-gallery">
+    {{- range $items }}
+    <figure>
+      <video controls autoplay loop muted playsinline preload="metadata"{{ with .poster }} poster="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"{{ end }}>
+        <source src="{{ .video.RelPermalink }}" type="{{ .video.MediaType.Type }}">
+      </video>
+      {{- with .caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+    </figure>
+    {{- end }}
+  </div>
+  {{- else }}
+  {{- with $m.image }}
+  {{- with $.Resources.GetMatch . }}
+  {{- $hero := . }}
+  {{- $sub := .MediaType.SubType }}
+  {{- if and (ne $sub "svg") (ne $sub "gif") (gt .Width 1440) }}{{ $hero = .Resize "1440x webp" }}{{ end }}
+  <figure class="paper-hero">
+    <img src="{{ $hero.RelPermalink }}"{{ if ne $sub "svg" }} width="{{ $hero.Width }}" height="{{ $hero.Height }}"{{ end }} alt="{{ $m.alt | default $.Title }}">
+    {{- with $m.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">{{ .Content }}</div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+  </footer>
+</article>
+{{- end }}

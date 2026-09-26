@@ -1,0 +1,55 @@
+{{- $p := .page }}
+{{- $h := .h | default "h3" }}
+{{- $m := $p.Params.media | default dict }}
+{{- $img := "" }}{{ with $m.image }}{{ $img = $p.Resources.GetMatch . }}{{ end }}
+{{- $vid := "" }}{{ with $m.video }}{{ $vid = $p.Resources.GetMatch . }}{{ end }}
+{{- $poster := "" }}{{ with $m.poster }}{{ $poster = $p.Resources.GetMatch . }}{{ end }}
+{{- $alt := $m.alt | default $p.Title }}
+{{- $hasMedia := or $vid $img }}
+<article class="paper-row{{ if not $hasMedia }} no-media{{ end }}">
+  {{- if $hasMedia }}
+  <div class="paper-media-col">
+  <a class="paper-media" href="{{ $p.RelPermalink }}" tabindex="-1">
+    {{- if $vid }}
+    <video autoplay loop muted playsinline preload="metadata"{{ with $poster }} poster="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"{{ end }} aria-label="{{ $alt }}">
+      <source src="{{ $vid.RelPermalink }}" type="{{ $vid.MediaType.Type }}">
+    </video>
+    {{- else }}
+    {{- $sub := $img.MediaType.SubType }}
+    {{- if eq $sub "svg" }}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" loading="lazy">
+    {{- else }}
+    {{- $thumb := $img }}
+    {{- if and (ne $sub "gif") (gt $img.Width 720) }}{{ $thumb = $img.Resize "720x webp" }}{{ end }}
+    <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $alt }}" loading="lazy">
+    {{- end }}
+    {{- end }}
+  </a>
+  {{- if or $p.Params.venue $p.Params.venueNote }}
+  <p class="paper-venue-caption">{{ with $p.Params.venue }}{{ . }}{{ end }}{{ with $p.Params.venueNote }} <span class="paper-venue-note">&middot; {{ . }}</span>{{ end }}</p>
+  {{- end }}
+  </div>
+  {{- end }}
+  <div class="paper-body">
+    {{- if eq $h "h2" }}<h2 class="paper-title">{{ else if eq $h "h4" }}<h4 class="paper-title">{{ else }}<h3 class="paper-title">{{ end }}
+      <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+      {{- if not $hasMedia }}
+      {{- with $p.Params.venue }} <span class="paper-venue-tag">{{ . }}</span>{{ end }}
+      {{- with $p.Params.venueNote }} <span class="paper-venue-note">&middot; {{ . }}</span>{{ end }}
+      {{- end }}
+    {{- if eq $h "h2" }}</h2>{{ else if eq $h "h4" }}</h4>{{ else }}</h3>{{ end }}
+    {{- with $p.Params.authors }}
+    <p class="paper-authors">{{ partial "paper_authors.html" $p }}</p>
+    {{- end }}
+    {{- with $p.Params.links }}
+    <p class="paper-links">
+      {{- range . }}{{ $l := . }}{{ with $l.url }}
+      <a href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>{{ $l.name | default . }}</a>
+      {{- end }}{{ end }}
+    </p>
+    {{- end }}
+    {{- with $p.Params.summary }}
+    <p class="paper-summary">{{ . | markdownify }}</p>
+    {{- end }}
+  </div>
+</article>

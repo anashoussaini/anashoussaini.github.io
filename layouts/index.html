@@ -1,0 +1,24 @@
+{{- define "main" }}
+<section class="home-intro">
+  {{- with .Params.portrait }}
+  <img class="home-portrait" src="{{ . | relURL }}" alt="Portrait of {{ site.Title }}" width="180" height="180">
+  {{- end }}
+  <div class="home-intro-text">
+    <h1>{{ .Title | default site.Title }}</h1>
+    {{- with .Params.role }}
+    <p class="home-role">{{ . | markdownify }}</p>
+    {{- end }}
+    <div class="home-bio">{{ .Content }}</div>
+    <div class="home-links">
+      {{- partial "social_icons.html" (dict) }}
+    </div>
+  </div>
+</section>
+
+<section class="research" id="research">
+  <div class="section-head">
+    <h2>Research</h2>
+  </div>
+  {{- partial "paper_list.html" (dict "pages" (where site.RegularPages "Section" "papers") "yearTag" "h3" "titleTag" "h4") }}
+</section>
+{{- end }}

@@ -1,0 +1,11 @@
+{{- define "main" }}
+<header class="page-header section-head">
+  <h1>{{ .Title }}</h1>
+  {{- with .Content }}
+  <div class="post-content">{{ . }}</div>
+  {{- end }}
+</header>
+<section class="research">
+  {{- partial "paper_list.html" (dict "pages" .RegularPages "yearTag" "h2" "titleTag" "h3") }}
+</section>
+{{- end }}

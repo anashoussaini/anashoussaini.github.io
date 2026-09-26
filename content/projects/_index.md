@@ -1,4 +1,4 @@
 ---
 title: "Projects"
-description: "Projects by me."
+description: "Robotics projects by Anas Houssaini."
 ---

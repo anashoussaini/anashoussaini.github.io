@@ -1,0 +1,13 @@
+{{- /* Renders paper rows grouped by year. Expects dict: pages, yearTag ("h2"/"h3"), titleTag ("h3"/"h4") */}}
+{{- $pages := .pages }}
+{{- $years := slice }}
+{{- range $pages }}{{ $years = $years | append .Date.Year }}{{ end }}
+{{- $years = sort ($years | uniq) "value" "desc" }}
+{{- range $y := $years }}
+{{- if eq $.yearTag "h2" }}<h2 class="year-head">{{ $y }}</h2>{{ else }}<h3 class="year-head">{{ $y }}</h3>{{ end }}
+{{- range $pages }}
+{{- if eq .Date.Year $y }}
+{{- partial "paper_row.html" (dict "page" . "h" $.titleTag) }}
+{{- end }}
+{{- end }}
+{{- end }}

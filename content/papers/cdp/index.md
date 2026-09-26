@@ -1,48 +1,43 @@
 ---
 title: "Contractive Diffusion Policies: Robust Action Diffusion via Contractive Score-Based Sampling with Differential Equations"
-date: 2025-09-15
-tags: ["robotics","offline RL","diffusion policies","contraction theory","stochastic differential equations"]
-author: "Anonymous (under review)"
-description: "Contractive Diffusion Policies (CDPs) promote contraction in the diffusion sampling dynamics for offline policy learning, improving robustness to solver and score-matching errors while reducing unwanted action variance."
-summary: "CDPs add a simple contraction regularizer to diffusion policies, pulling nearby sampling trajectories together to suppress solver and score-matching errors. This yields more robust action generation in offline RL and imitation learning, especially in low-data regimes."
+date: 2026-01-02
+authors: ["Amin Abyaneh", "Charlotte Morissette", "Mohamad H. Danesh", "Anas Houssaini", "David Meger", "Gregory Dudek", "Hsiu-Chin Lin"]
+venue: "ICLR 2026"
+tags: ["offline RL", "diffusion policies", "contraction theory", "robot learning"]
+description: "Contractive Diffusion Policies make diffusion sampling contractive, improving robustness to solver and score errors in offline policy learning."
+summary: "CDPs add a contraction regularizer to diffusion policies that pulls nearby sampling flows together, suppressing solver and score-matching errors and unwanted action variance. Backed by theory and a practical recipe with a single extra hyperparameter, they often outperform standard diffusion policies in simulation and on real robots, most clearly when data is scarce."
+links:
+  - name: Paper
+    url: https://arxiv.org/abs/2601.01003
+  - name: OpenReview
+    url: https://openreview.net/forum?id=iKJbmx1iuQ
+  - name: Code
+    url: https://github.com/aminabyaneh/contractive-diffusion-policy
+  - name: Project page
+    url: https://contractive-diffusion.github.io/
+media:
+  image: "media/method_large.jpg"
+  alt: "Methodology overview of Contractive Diffusion Policies: contraction loss during offline training and contractive ODE sampling at deployment."
 cover:
-    image: "project_assets/method_large.jpg"
-    alt: "Performance of Contractive Diffusion Policies vs baseline diffusion policies"
-    relative: true
-
+  image: "media/method_large.jpg"
+  alt: "Methodology overview of Contractive Diffusion Policies."
+  relative: true
 ---
 
----
+## Abstract
 
-##### Links
+Diffusion policies have emerged as powerful generative models for offline policy learning, whose sampling process can be rigorously characterized by a score function guiding a stochastic differential equation (SDE). However, the same score-based SDE modeling that grants diffusion policies the flexibility to learn diverse behavior also incurs solver and score-matching errors, large data requirements, and inconsistencies in action generation. While less critical in image generation, these inaccuracies compound and lead to failure in continuous control settings. We introduce contractive diffusion policies (CDPs) to induce contractive behavior in the diffusion sampling dynamics. Contraction pulls nearby flows closer to enhance robustness against solver and score-matching errors while reducing unwanted action variance. We develop an in-depth theoretical analysis along with a practical implementation recipe to incorporate CDPs into existing diffusion policy architectures with minimal modification and computational cost. We evaluate CDPs for offline learning by conducting extensive experiments in simulation and real-world settings. Across benchmarks, CDPs often outperform baseline policies, with pronounced benefits under data scarcity.
 
-+ [Paper](https://openreview.net/pdf?id=iKJbmx1iuQ)
-+ [Project page](https://contractive-diffusion.github.io)
+![Concept: contraction in diffusion sampling](media/concept.jpg)
 
----
+## Citation
 
-![CDP advantage over diffusion policy baselines](project_assets/method_large.jpg)
-##### Abstract
-
-Diffusion policies have emerged as powerful generative models for offline policy learning, where a learned score function guides a stochastic differential equation (SDE) to iteratively denoise actions. However, the same score-based SDE modeling that enables diverse behavior also introduces solver and score-matching errors, large data requirements, and inconsistencies in action generation. While these inaccuracies are often tolerable in image generation, they accumulate in continuous control and can drive the policy off the dataset support, harming performance and safety, especially on real robots.
-
-Contractive Diffusion Policies (CDPs) address this by explicitly promoting **contraction** in the diffusion sampling dynamics. Contraction pulls nearby flows closer together, enhancing robustness to solver and score-matching errors while reducing unwanted action variance. We provide a theoretical analysis linking contraction to reduced error accumulation in diffusion sampling, and derive a practical implementation recipe that augments existing diffusion policy architectures with a single tuned hyperparameter and an efficient contraction loss. CDPs integrate with standard offline RL and imitation-learning backbones with minimal modification and computational overhead.
-
-We evaluate CDPs extensively on continuous-control benchmarks (including D4RL and RoboMimic) and real-world robotic manipulation tasks. Across settings, CDPs often outperform non-contractive diffusion policies, with particularly strong gains in low-data regimes, supporting the view that contraction helps mitigate error accumulation in diffusion-based policy learning.
-
----
-
-![Concept: contraction in diffusion sampling](project_assets/concept.jpg)
-
-##### Citation
-
-"Contractive Diffusion Policies: Robust Action Diffusion via Contractive Score-Based Sampling with Differential Equations." ICLR 2026, under review.
-
-```latex
-@article{contractive_diffusion_policies_2025,
-  title   = {Contractive Diffusion Policies: Robust Action Diffusion via Contractive Score-Based Sampling with Differential Equations},
-  author  = {Anonymous},
-  year    = {2025},
-  note    = {ICLR 2026 Conference Submission},
-  url     = {https://openreview.net/forum?id=iKJbmx1iuQ}
+```bibtex
+@inproceedings{abyaneh2026contractive,
+  title     = {Contractive Diffusion Policies: Robust Action Diffusion via Contractive Score-Based Sampling with Differential Equations},
+  author    = {Abyaneh, Amin and Morissette, Charlotte and Danesh, Mohamad H. and Houssaini, Anas and Meger, David and Dudek, Gregory and Lin, Hsiu-Chin},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=iKJbmx1iuQ}
 }
+```

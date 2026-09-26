@@ -9,7 +9,7 @@
     padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
     text-align: center;
     line-height: 20px;
-    background: var(--code-bg);
+    border-top: 1px solid var(--border);
 }
 
 .footer span {
@@ -53,7 +53,6 @@
     color: var(--secondary);
 }
 
-.top-link:focus,
-#theme-toggle:focus {
+.top-link:focus {
     outline: 0;
 }

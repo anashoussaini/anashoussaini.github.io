@@ -9,7 +9,6 @@ pagination:
 
 taxonomies:
     tag: tags
-# we have to fix the menu
 
 menu:
     main:
@@ -24,13 +23,13 @@ menu:
           weight: 3
 
 params:
-    description: "This website hosts Achraf Anas El Houssaini's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Achraf Anas El Houssaini
+    description: "Anas Houssaini, Applied Scientist Intern at Amazon FAR and MSc student at McGill and Mila, working on offline RL, dexterous manipulation, and world models."
+    author: Anas Houssaini
     googleAnalyticsID: "G-LE3F13RMP1"
     DateFormat: "January 2006"
-    defaultTheme: dark
+    defaultTheme: light
+    disableThemeToggle: true
     hideFooter: false
-    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -47,20 +46,16 @@ params:
     UseHugoToc: true
     comments: false
     math: true
-    profileMode:
-          enabled: true
-          title: Anas Houssaini
-          subtitle: "Hi, I am Anas Houssaini and I am a 2nd year MSc Computer Science student in AI/robotics at McGill University. I am advised by Professor David Meger and Professor Hsiu-chin Lin at the Mobile Robotics Lab (MRL).\n My research is driven by a singular obsession: figuring out how robots can build and adapt their own understanding of the world, something that evolves, learns, and gets closer to how humans process their surroundings. Right now, I'm particularly fascinated by dexterity (particularly hand like robots), how robotic arms with fingers can collaborate, coordinate, and assist each other to tackle complex tasks."
-          imageUrl: "picture.jpg"
-          imageWidth: 160
-          imageHeight: 160
-          buttons:
-            - name: Papers
-              url: papers/
-            - name: Projects
-              url: projects/
-            - name: Blog
-              url: blog/
+
+    # Author names rendered in bold in paper author lists (both spellings appear in publications).
+    highlightAuthors: ["Anas Houssaini", "Anas El Houssaini"]
+
+    schema:
+        publisherType: Person
+        sameAs:
+            - https://scholar.google.com/citations?user=Hq0AYv8AAAAJ&hl=en
+            - https://github.com/anashoussaini
+            - https://x.com/anashoussaini
 
     socialIcons:
         - name: Email
@@ -71,9 +66,13 @@ params:
           url: https://github.com/anashoussaini
         - name: Twitter
           url: https://x.com/anashoussaini
+        - name: CV
+          url: /files/Anas-Houssaini-Resume.pdf
 
     assets:
         disableScrollBarStyle: true
+        theme_color: "#ffffff"
+        msapplication_TileColor: "#ffffff"
     cover:
         hiddenInList: false
         hiddenInSingle: true

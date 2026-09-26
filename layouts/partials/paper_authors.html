@@ -1,0 +1,9 @@
+{{- $hl := site.Params.highlightAuthors | default (slice) }}
+{{- range $i, $a := .Params.authors }}
+{{- $a = strings.TrimSpace $a }}
+{{- $star := hasSuffix $a "*" }}
+{{- $name := strings.TrimSpace (strings.TrimSuffix "*" $a) }}
+{{- if $i }}, {{ end }}
+{{- if in $hl $name }}<strong class="me">{{ $name }}</strong>{{ else }}{{ $name }}{{ end }}
+{{- if $star }}<sup>*</sup>{{ end }}
+{{- end }}
