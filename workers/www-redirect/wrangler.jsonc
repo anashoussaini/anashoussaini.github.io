@@ -1,0 +1,9 @@
+// Tiny Worker that 301-redirects www.anashoussaini.com/* to https://anashoussaini.com/*.
+{
+  "name": "anashoussaini-www-redirect",
+  "main": "index.js",
+  "compatibility_date": "2026-11-01",
+  "routes": [{ "pattern": "www.anashoussaini.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false
+}

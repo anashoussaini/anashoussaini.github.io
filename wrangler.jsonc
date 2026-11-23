@@ -1,0 +1,14 @@
+// Cloudflare Workers config: serves the Hugo build (./public) at anashoussaini.com.
+// Deploy by hand:  hugo --minify && npx wrangler deploy   (CI does this on every push to main)
+// Later: add "main": "src/index.js" to run server code (APIs, sims) next to the static site.
+{
+  "name": "anashoussaini",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "anashoussaini.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false
+}

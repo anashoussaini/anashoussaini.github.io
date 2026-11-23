@@ -1,34 +1,33 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+# Builds the Hugo site and deploys it to Cloudflare Workers (anashoussaini.com),
+# then publishes a redirect-only copy to GitHub Pages so every
+# anashoussaini.github.io URL forwards to the same page on anashoussaini.com.
+#
+# Needs two repository secrets (Settings > Secrets and variables > Actions):
+#   CLOUDFLARE_API_TOKEN   Cloudflare API token ("Edit Cloudflare Workers" template)
+#   CLOUDFLARE_ACCOUNT_ID  Cloudflare account ID
+name: Deploy site
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# One deploy at a time; never cancel a deploy that is already running.
 concurrency:
-  group: "pages"
+  group: "deploy"
   cancel-in-progress: false
 
-# Default to bash
 defaults:
   run:
     shell: bash
 
 jobs:
-  # Build job
-  build:
+  cloudflare:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.2
@@ -39,30 +38,35 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
+        run: hugo --minify
+      - name: Deploy to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          WRANGLER_SEND_METRICS: "false"
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
+          npx --yes wrangler@4 deploy
+          npx --yes wrangler@4 deploy --config workers/www-redirect/wrangler.jsonc
+      - name: Build redirect-only copy for anashoussaini.github.io
+        run: .github/scripts/make-redirect-site.sh public ${{ runner.temp }}/github-pages https://anashoussaini.com
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ${{ runner.temp }}/github-pages
 
-  # Deployment job
-  deploy:
+  # Runs only after the Cloudflare deploy succeeded, so github.io never
+  # redirects to a site that failed to deploy.
+  github-pages:
+    needs: cloudflare
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy redirect site to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
