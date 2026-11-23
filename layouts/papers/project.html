@@ -1,0 +1,19 @@
+{{- /* Full project page for papers whose front matter sets layout: "project" (e.g. QWM).
+       The page content brings its own hero, figures and scoped styles, so the header
+       only carries the title (the structure PaperMod's single layout uses). */ -}}
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <div class="post-content">{{ .Content }}</div>
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+  </footer>
+</article>
+{{- end }}
