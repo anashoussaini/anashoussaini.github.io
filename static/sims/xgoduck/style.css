@@ -1,0 +1,111 @@
+:root {
+  --bg: #0b0c0e;
+  --panel: rgba(17, 19, 23, 0.74);
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text: #e9edf1;
+  --muted: #8d97a4;
+  --sky: #78c7f2;
+  --sky-ink: #06141d;
+  --warm: #f0a46a;
+  --radius: 14px;
+  --font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.4 var(--font); -webkit-font-smoothing: antialiased; }
+button { font: inherit; color: inherit; }
+kbd { font: 11px/1 var(--mono); padding: 3px 5px; border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 5px; color: var(--text); background: rgba(255,255,255,0.03); }
+
+#app { position: fixed; inset: 0; overflow: hidden; user-select: none; -webkit-user-select: none; background: var(--bg) url(poster.jpg) center / cover no-repeat; }
+.poster .top, .poster .hud, .poster .panel, .poster .start, .poster .stick, .poster .touch-actions, .poster .toast { display: none !important; }
+#view { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; }
+.running #view { touch-action: none; }
+
+/* top bar */
+.top { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; pointer-events: none; }
+.brand { font-weight: 600; letter-spacing: 0.01em; display: flex; align-items: center; gap: 8px; }
+.brand .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sky); box-shadow: 0 0 12px rgba(120, 199, 242, 0.7); }
+.brand .sub { color: var(--muted); font-weight: 400; }
+.top-actions { display: flex; gap: 8px; pointer-events: auto; }
+.ghost { background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: border-color .15s, background .15s; }
+.ghost:hover { border-color: var(--line-strong); }
+.ghost[aria-pressed="true"] { border-color: var(--sky); color: var(--sky); }
+.ghost.icon { padding: 6px 9px; display: grid; place-items: center; }
+
+/* status */
+.hud { position: absolute; top: 54px; left: 16px; width: 248px; padding: 12px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); pointer-events: none; }
+.hud-emotion { font-size: 20px; font-weight: 650; letter-spacing: -0.01em; margin-bottom: 8px; }
+.hud-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 12px; }
+.hud-row .k { color: var(--muted); min-width: 52px; }
+.hud-row .v { font-family: var(--mono); font-size: 11.5px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gate, .beak { position: relative; flex: 1; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.08); overflow: hidden; }
+#gateFill, #beakFill { position: absolute; left: 0; top: 0; bottom: 0; width: 0; border-radius: 3px; background: var(--sky); transition: width .08s linear; }
+#beakFill { background: var(--warm); }
+
+/* inspector */
+.inspector { position: absolute; top: 54px; right: 16px; width: min(46vw, 470px); padding: 12px 14px 10px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); pointer-events: none; }
+.insp-title { font-weight: 600; font-size: 12.5px; margin-bottom: 8px; }
+.insp-title span { color: var(--muted); font-weight: 400; margin-left: 6px; }
+#inspCanvas { width: 100%; height: auto; display: block; }
+
+/* bottom panel */
+.panel { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 16px 12px; background: linear-gradient(to top, rgba(11,12,14,0.96) 55%, rgba(11,12,14,0)); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--line-strong); background: rgba(255,255,255,0.025); border-radius: 999px; padding: 6px 12px; cursor: pointer; font-size: 13px; color: var(--text); transition: background .15s, border-color .15s, color .15s; }
+.chip:hover { border-color: rgba(120, 199, 242, 0.6); }
+.chip:focus-visible, .ghost:focus-visible, .primary:focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
+.chip[aria-pressed="true"] { background: var(--sky); border-color: var(--sky); color: var(--sky-ink); font-weight: 600; }
+.help { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; color: var(--muted); font-size: 12px; align-items: center; }
+.help span { display: inline-flex; gap: 4px; align-items: center; }
+.help-note { margin-left: auto; }
+.help-touch { display: none !important; }
+
+/* toast */
+.toast { position: absolute; left: 50%; top: 18px; transform: translate(-50%, -8px); padding: 7px 14px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); font-size: 13px; opacity: 0; transition: opacity .2s, transform .2s; pointer-events: none; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* touch controls */
+.stick { position: absolute; left: 22px; bottom: 120px; width: 116px; height: 116px; border-radius: 50%; border: 1px solid var(--line-strong); background: rgba(17,19,23,0.55); display: none; touch-action: none; }
+.stick-knob { position: absolute; left: 50%; top: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: rgba(120,199,242,0.9); box-shadow: 0 4px 18px rgba(0,0,0,0.5); }
+.touch-actions { position: absolute; right: 22px; bottom: 140px; display: none; }
+.round { width: 64px; height: 64px; border-radius: 50%; border: 1px solid var(--line-strong); background: rgba(17,19,23,0.7); font-size: 13px; }
+.touch .stick, .touch .touch-actions { display: block; }
+.touch .help span:not(.help-touch):not(.help-note) { display: none; }
+.touch .help-touch { display: inline-flex !important; }
+.touch .help-note { margin-left: 0; }
+
+/* start screen */
+.start { position: absolute; inset: 0; display: grid; place-items: center; background: radial-gradient(ellipse at 50% 35%, rgba(120,199,242,0.10), rgba(11,12,14,0.0) 55%), rgba(11,12,14,0.55); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); padding: 20px; transition: opacity .35s; }
+.start.gone { opacity: 0; pointer-events: none; }
+.start-card { max-width: 460px; text-align: center; }
+.start h1 { font-size: 24px; font-weight: 680; letter-spacing: -0.015em; margin: 0 0 10px; }
+.start p { color: #b9c2cc; margin: 0 0 20px; line-height: 1.55; }
+.primary { background: var(--sky); color: var(--sky-ink); border: 0; border-radius: 999px; padding: 11px 22px; font-weight: 650; cursor: pointer; box-shadow: 0 8px 30px rgba(120,199,242,0.25); }
+.primary:hover { filter: brightness(1.06); }
+.primary:disabled { opacity: 0.6; cursor: default; }
+.start-meta { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.progress { margin: 16px auto 0; width: 240px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.1); overflow: hidden; }
+#progressFill { display: block; height: 100%; width: 0; background: var(--sky); transition: width .1s; }
+
+@media (max-width: 720px) {
+  .brand .sub { display: none; }
+  .hud { width: 150px; top: 50px; left: 10px; padding: 8px 10px; }
+  .hud-emotion { font-size: 15px; margin-bottom: 4px; }
+  .hud-row { display: none; }
+  .hud-row:has(.gate) { display: flex; margin-top: 2px; }
+  .hud-row:has(.gate) .k { display: none; }
+  .inspector { left: 10px; right: 10px; width: auto; top: auto; bottom: 110px; }
+  .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; touch-action: pan-x; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip { flex: none; }
+  .help .help-note { display: none !important; }
+  .panel { padding: 10px 10px 12px; }
+}
+@media (max-height: 460px) {
+  .hud { display: none; }
+}
+
+/* before Start: only the poster and the start card */
+#app:not(.running) .top, #app:not(.running) .hud, #app:not(.running) .panel, #app:not(.running) .stick, #app:not(.running) .touch-actions, #app:not(.running) .inspector { visibility: hidden; }

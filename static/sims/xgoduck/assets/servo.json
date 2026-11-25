@@ -1,0 +1,18 @@
+{
+ "kt": 0.6237611235393989,
+ "R": 4.910191564179625,
+ "friction_base": 0.015803365327573492,
+ "friction_stribeck": 0.009590058942953754,
+ "dtheta_stribeck": 0.946465692532126,
+ "alpha": 1.5220506664931566,
+ "error_gain_ratio": 1.321738701681577,
+ "kp": 5.0,
+ "vin": 7.6,
+ "vin_drop_gain": 0.1,
+ "vin_min": 7.0,
+ "duty_max": 0.97,
+ "delay_steps": 3,
+ "decimation": 4,
+ "dt": 0.005,
+ "stand_z": 0.139158
+}

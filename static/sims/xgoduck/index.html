@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>XgoDuck: one policy for walking and 21 emotions</title>
+<meta name="description" content="The XgoDuck controller running in your browser: MuJoCo physics, a model of the duck's servos, and the trained policy.">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports": {"three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/"}}</script>
+</head>
+<body>
+<div id="app">
+  <canvas id="view" aria-label="3D view of the duck"></canvas>
+
+  <header class="top">
+    <div class="brand"><span class="dot"></span>XgoDuck</div>
+    <div class="top-actions">
+      <button id="btnInputs" class="ghost" aria-pressed="false" title="Show what the policy sees (I)">Inputs</button>
+      <button id="btnFull" class="ghost icon" title="Full screen" aria-label="Full screen">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="hud" aria-live="polite">
+    <div class="hud-emotion" id="hudEmotion">Normal</div>
+    <div class="hud-row"><span class="k">command</span><span id="hudCmd" class="v">standing</span></div>
+    <div class="hud-row" title="Standing, the legs and trunk follow the emotion's reference too. Walking, it fades out of them over 0.4 s and stays on the head and beak.">
+      <span class="k">emotion</span><span id="hudGate" class="v">whole body</span>
+    </div>
+    <div class="hud-row"><span class="k"></span><span class="gate"><span id="gateFill"></span></span></div>
+    <div class="hud-row"><span class="k">beak</span><span class="beak"><span id="beakFill"></span></span></div>
+  </section>
+
+  <aside id="inspector" class="inspector" hidden>
+    <div class="insp-title">Policy inputs <span id="inspN">normalized, every 20 ms</span></div>
+    <canvas id="inspCanvas" width="640" height="300"></canvas>
+  </aside>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <div id="stick" class="stick" aria-hidden="true"><div class="stick-knob"></div></div>
+  <div class="touch-actions">
+    <button id="btnPushTouch" class="round" aria-label="Push the duck">Push</button>
+  </div>
+
+  <footer class="panel">
+    <div id="chips" class="chips" role="group" aria-label="Emotion"></div>
+    <div class="help">
+      <span><kbd>W</kbd><kbd>S</kbd> walk</span>
+      <span><kbd>A</kbd><kbd>D</kbd> turn</span>
+      <span><kbd>Q</kbd><kbd>E</kbd> sidestep</span>
+      <span><kbd>Space</kbd> push</span>
+      <span><kbd>R</kbd> reset</span>
+      <span class="help-touch">Drag the left pad to walk and turn. Tap an emotion.</span>
+    </div>
+  </footer>
+
+  <div id="start" class="start">
+    <div class="start-card">
+      <h1>Try it</h1>
+      <p>The network that runs on the duck, live in your browser.</p>
+      <button id="btnStart" class="primary">Start the simulation</button>
+      <div class="start-meta">about 17 MB · runs on your device</div>
+      <div id="progress" class="progress" hidden><span id="progressFill"></span></div>
+      <div id="progressText" class="start-meta" hidden></div>
+    </div>
+  </div>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

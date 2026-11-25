@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="1100" height="520" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="How an emotion reaches the policy"><title>How an emotion reaches the policy</title><defs><marker id="a-sub" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M1.2 1.2 L8.8 5 L1.2 8.8" fill="none" stroke="#4f5661" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="a-sky" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M1.2 1.2 L8.8 5 L1.2 8.8" fill="none" stroke="#2479b0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="a-warm" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M1.2 1.2 L8.8 5 L1.2 8.8" fill="none" stroke="#b45f24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="a-muted" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M1.2 1.2 L8.8 5 L1.2 8.8" fill="none" stroke="#8a919b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#e3f2fc"/><stop offset="0.225" stop-color="#e3f2fc"/><stop offset="0.350" stop-color="#bfe3f8"/><stop offset="1" stop-color="#bfe3f8"/></linearGradient><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#78c7f2"/><stop offset="0.575" stop-color="#78c7f2"/><stop offset="0.675" stop-color="#78c7f2" stop-opacity="0"/><stop offset="1" stop-color="#78c7f2" stop-opacity="0"/></linearGradient></defs><rect width="1100" height="520" fill="#ffffff"/><rect x="24.0" y="86.0" width="49.4" height="34.0" rx="5" fill="#eceff2" stroke="none" stroke-width="1.0" />
+<line x1="32.23" y1="86.0" x2="32.23" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="40.46" y1="86.0" x2="40.46" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="48.69" y1="86.0" x2="48.69" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="56.92" y1="86.0" x2="56.92" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="65.15" y1="86.0" x2="65.15" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="77.4" y="86.0" width="115.2" height="34.0" rx="5" fill="#eceff2" stroke="none" stroke-width="1.0" />
+<line x1="85.61" y1="86.0" x2="85.61" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="93.84" y1="86.0" x2="93.84" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="102.07" y1="86.0" x2="102.07" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="110.30" y1="86.0" x2="110.30" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="118.52" y1="86.0" x2="118.52" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="126.75" y1="86.0" x2="126.75" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="134.98" y1="86.0" x2="134.98" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="143.21" y1="86.0" x2="143.21" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="151.44" y1="86.0" x2="151.44" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="159.67" y1="86.0" x2="159.67" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="167.90" y1="86.0" x2="167.90" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="176.13" y1="86.0" x2="176.13" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="184.36" y1="86.0" x2="184.36" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="196.6" y="86.0" width="115.2" height="34.0" rx="5" fill="#eceff2" stroke="none" stroke-width="1.0" />
+<line x1="204.82" y1="86.0" x2="204.82" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="213.05" y1="86.0" x2="213.05" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="221.28" y1="86.0" x2="221.28" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="229.51" y1="86.0" x2="229.51" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="237.74" y1="86.0" x2="237.74" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="245.97" y1="86.0" x2="245.97" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="254.20" y1="86.0" x2="254.20" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="262.43" y1="86.0" x2="262.43" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="270.66" y1="86.0" x2="270.66" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="278.89" y1="86.0" x2="278.89" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="287.11" y1="86.0" x2="287.11" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="295.34" y1="86.0" x2="295.34" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="303.57" y1="86.0" x2="303.57" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="315.8" y="86.0" width="123.4" height="34.0" rx="5" fill="#eceff2" stroke="none" stroke-width="1.0" />
+<line x1="324.03" y1="86.0" x2="324.03" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="332.26" y1="86.0" x2="332.26" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="340.49" y1="86.0" x2="340.49" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="348.72" y1="86.0" x2="348.72" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="356.95" y1="86.0" x2="356.95" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="365.18" y1="86.0" x2="365.18" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="373.41" y1="86.0" x2="373.41" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="381.64" y1="86.0" x2="381.64" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="389.87" y1="86.0" x2="389.87" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="398.10" y1="86.0" x2="398.10" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="406.33" y1="86.0" x2="406.33" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="414.56" y1="86.0" x2="414.56" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="422.79" y1="86.0" x2="422.79" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="431.02" y1="86.0" x2="431.02" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="443.2" y="86.0" width="24.7" height="34.0" rx="5" fill="#fbdcc4" stroke="none" stroke-width="1.0" />
+<line x1="451.48" y1="86.0" x2="451.48" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="459.70" y1="86.0" x2="459.70" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="471.9" y="86.0" width="32.9" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<line x1="480.16" y1="86.0" x2="480.16" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="488.39" y1="86.0" x2="488.39" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="496.62" y1="86.0" x2="496.62" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="508.9" y="86.0" width="49.4" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<line x1="517.08" y1="86.0" x2="517.08" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="525.31" y1="86.0" x2="525.31" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="533.54" y1="86.0" x2="533.54" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="541.77" y1="86.0" x2="541.77" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="550.00" y1="86.0" x2="550.00" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="562.2" y="86.0" width="172.8" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<rect x="586.9" y="86.0" width="8.2" height="34.0" rx="1.5" fill="#78c7f2" stroke="none" stroke-width="1.0" />
+<line x1="570.46" y1="86.0" x2="570.46" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="578.69" y1="86.0" x2="578.69" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="586.92" y1="86.0" x2="586.92" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="595.15" y1="86.0" x2="595.15" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="603.38" y1="86.0" x2="603.38" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="611.61" y1="86.0" x2="611.61" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="619.84" y1="86.0" x2="619.84" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="628.07" y1="86.0" x2="628.07" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="636.30" y1="86.0" x2="636.30" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="644.52" y1="86.0" x2="644.52" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="652.75" y1="86.0" x2="652.75" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="660.98" y1="86.0" x2="660.98" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="669.21" y1="86.0" x2="669.21" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="677.44" y1="86.0" x2="677.44" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="685.67" y1="86.0" x2="685.67" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="693.90" y1="86.0" x2="693.90" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="702.13" y1="86.0" x2="702.13" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="710.36" y1="86.0" x2="710.36" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="718.59" y1="86.0" x2="718.59" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="726.82" y1="86.0" x2="726.82" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="739.0" y="86.0" width="16.5" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<line x1="747.28" y1="86.0" x2="747.28" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="759.5" y="86.0" width="8.2" height="34.0" rx="5" fill="#78c7f2" stroke="none" stroke-width="1.0" />
+<rect x="771.7" y="86.0" width="98.8" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<line x1="779.97" y1="86.0" x2="779.97" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="788.20" y1="86.0" x2="788.20" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="796.43" y1="86.0" x2="796.43" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="804.66" y1="86.0" x2="804.66" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="812.89" y1="86.0" x2="812.89" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="821.11" y1="86.0" x2="821.11" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="829.34" y1="86.0" x2="829.34" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="837.57" y1="86.0" x2="837.57" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="845.80" y1="86.0" x2="845.80" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="854.03" y1="86.0" x2="854.03" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="862.26" y1="86.0" x2="862.26" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="874.5" y="86.0" width="181.0" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<line x1="882.72" y1="86.0" x2="882.72" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="890.95" y1="86.0" x2="890.95" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="899.18" y1="86.0" x2="899.18" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="907.41" y1="86.0" x2="907.41" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="915.64" y1="86.0" x2="915.64" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="923.87" y1="86.0" x2="923.87" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="932.10" y1="86.0" x2="932.10" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="940.33" y1="86.0" x2="940.33" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="948.56" y1="86.0" x2="948.56" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="956.79" y1="86.0" x2="956.79" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="965.02" y1="86.0" x2="965.02" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="973.25" y1="86.0" x2="973.25" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="981.48" y1="86.0" x2="981.48" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="989.70" y1="86.0" x2="989.70" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="997.93" y1="86.0" x2="997.93" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1006.16" y1="86.0" x2="1006.16" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1014.39" y1="86.0" x2="1014.39" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1022.62" y1="86.0" x2="1022.62" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1030.85" y1="86.0" x2="1030.85" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1039.08" y1="86.0" x2="1039.08" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<line x1="1047.31" y1="86.0" x2="1047.31" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="1059.5" y="86.0" width="16.5" height="34.0" rx="5" fill="#e3f2fc" stroke="none" stroke-width="1.0" />
+<line x1="1067.77" y1="86.0" x2="1067.77" y2="120.0" stroke="#ffffff" stroke-width="1.2"/>
+<path d="M25.0 70 V 62 H 438.2 V 70" fill="none" stroke="#4f5661" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="231.6" y="52.0" font-size="12.5" font-weight="650" fill="#4f5661" text-anchor="middle" >what the duck feels · 49</text>
+<path d="M472.9 70 V 62 H 1075.0 V 70" fill="none" stroke="#2479b0" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="774.0" y="52.0" font-size="12.5" font-weight="650" fill="#2479b0" text-anchor="middle" >what the emotion asks for · 70</text>
+<text x="24.0" y="22.0" font-size="10.5" font-weight="700" fill="#4f5661" text-anchor="start" letter-spacing="0.08em" >THE POLICY&#x27;S INPUT, EVERY 20 MS: 122 NUMBERS</text>
+<text x="48.7" y="138.0" font-size="12" font-weight="400" fill="#4f5661" text-anchor="middle" >IMU</text>
+<text x="135.0" y="138.0" font-size="12" font-weight="400" fill="#4f5661" text-anchor="middle" >joint angles</text>
+<text x="254.2" y="138.0" font-size="12" font-weight="400" fill="#4f5661" text-anchor="middle" >joint speeds</text>
+<text x="377.5" y="138.0" font-size="12" font-weight="400" fill="#4f5661" text-anchor="middle" >last action</text>
+<text x="488.4" y="138.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="middle" >head</text>
+<text x="533.5" y="138.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="middle" >trunk</text>
+<text x="648.6" y="138.0" font-size="12" font-weight="600" fill="#2479b0" text-anchor="middle" >emotion one-hot</text>
+<text x="821.1" y="138.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="middle" >legs + soles</text>
+<text x="965.0" y="138.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="middle" >0.2 s ahead</text>
+<path d="M455.6 123.0 V 148.0" fill="none" stroke="#b45f24" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="455.6" y="160.0" font-size="12" font-weight="400" fill="#b45f24" text-anchor="middle" >command · 3</text>
+<path d="M747.3 123.0 V 148.0" fill="none" stroke="#2479b0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="752.3" y="160.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="end" >phase</text>
+<path d="M763.6 123.0 V 166.0" fill="none" stroke="#2479b0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="760.6" y="178.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="start" >standing</text>
+<path d="M1067.8 123.0 V 148.0" fill="none" stroke="#2479b0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1072.8" y="160.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="end" >beak</text>
+<path d="M591.0 123.0 V 148.0" fill="none" stroke="#2479b0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="595.0" y="160.0" font-size="12" font-weight="400" fill="#2479b0" text-anchor="start" >1 = curious</text>
+<line x1="24" y1="210.0" x2="1076" y2="210.0" stroke="#e2e5e9" stroke-width="1"/>
+<text x="24.0" y="234.0" font-size="10.5" font-weight="700" fill="#4f5661" text-anchor="start" letter-spacing="0.08em" >OVER TIME</text>
+<text x="152.0" y="270.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="end" >emotion</text>
+<text x="152.0" y="322.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="end" >stick</text>
+<text x="152.0" y="374.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="end" >standing</text>
+<text x="152.0" y="432.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="end" >legs + trunk</text>
+<text x="152.0" y="480.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="end" >head + beak</text>
+<path d="M372.3 244.0 V 498.0" fill="none" stroke="#8a919b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 4" />
+<text x="372.3" y="236.0" font-size="11.5" font-weight="600" fill="#4f5661" text-anchor="middle" >tap: Curious</text>
+<path d="M690.1 244.0 V 498.0" fill="none" stroke="#8a919b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 4" />
+<text x="690.1" y="236.0" font-size="11.5" font-weight="600" fill="#4f5661" text-anchor="middle" >stick: walk</text>
+<rect x="168.0" y="253.0" width="908.0" height="26.0" rx="7" fill="url(#g1)" stroke="none" stroke-width="1.0" />
+<text x="180.0" y="270.5" font-size="12.5" font-weight="600" fill="#2479b0" text-anchor="start" >Happy</text>
+<text x="497.8" y="270.5" font-size="12.5" font-weight="600" fill="#2479b0" text-anchor="start" >Curious</text>
+<text x="429.0" y="296.0" font-size="11.5" font-weight="400" fill="#8a919b" text-anchor="middle" >0.5 s crossfade</text>
+<path d="M168.0 327.0 H 690.1 V 309.0 H 1076.0" fill="none" stroke="#b45f24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="179.3" y="320.0" font-size="11.5" font-weight="400" fill="#8a919b" text-anchor="start" >standing (0 m/s)</text>
+<text x="700.1" y="303.0" font-size="11.5" font-weight="400" fill="#b45f24" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" >0.2 m/s</text>
+<path d="M168.0 358.0 H 690.1 L 780.9 382.0 H 1076.0" fill="none" stroke="#2479b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<text x="164.0" y="362.0" font-size="10.5" font-weight="400" fill="#8a919b" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" >1</text>
+<text x="164.0" y="386.0" font-size="10.5" font-weight="400" fill="#8a919b" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" >0</text>
+<text x="790.9" y="372.0" font-size="11.5" font-weight="400" fill="#8a919b" text-anchor="start" >0.4 s fade</text>
+<rect x="168.0" y="413.0" width="908.0" height="30.0" rx="8" fill="#eceff2" stroke="none" stroke-width="1.0" />
+<rect x="168.0" y="413.0" width="908.0" height="30.0" rx="8" fill="url(#g2)" stroke="none" stroke-width="1.0" />
+<text x="180.0" y="432.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="start" >the emotion&#x27;s reference, while standing</text>
+<text x="802.2" y="432.5" font-size="12.5" font-weight="400" fill="#4f5661" text-anchor="start" >the policy walks: the twist command decides</text>
+<rect x="168.0" y="461.0" width="908.0" height="30.0" rx="8" fill="#78c7f2" stroke="none" stroke-width="1.0" />
+<text x="180.0" y="480.5" font-size="12.5" font-weight="600" fill="#1d1f23" text-anchor="start" >the policy tracks the emotion&#x27;s reference, always</text></svg>

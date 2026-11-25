@@ -1,0 +1,60 @@
+{
+ "files": [
+  {
+   "path": "mujoco/mujoco.wasm",
+   "bytes": 11201302,
+   "hash": "904645316cfe"
+  },
+  {
+   "path": "assets/library.bin",
+   "bytes": 1890000,
+   "hash": "cece37f1a043"
+  },
+  {
+   "path": "assets/library.json",
+   "bytes": 1648,
+   "hash": "183538c9f69a"
+  },
+  {
+   "path": "assets/physics/left_ankle.stl",
+   "bytes": 79584,
+   "hash": "305c7e290013"
+  },
+  {
+   "path": "assets/physics/right_ankle.stl",
+   "bytes": 80284,
+   "hash": "1f2a6b317277"
+  },
+  {
+   "path": "assets/physics/xgoduck_web.xml",
+   "bytes": 14852,
+   "hash": "606e28bd8f27"
+  },
+  {
+   "path": "assets/policy.bin",
+   "bytes": 1141844,
+   "hash": "0d63c4dfed4a"
+  },
+  {
+   "path": "assets/policy.json",
+   "bytes": 1682,
+   "hash": "3b32bad8fbce"
+  },
+  {
+   "path": "assets/render/meshes.bin",
+   "bytes": 2521464,
+   "hash": "94af1e1c4405"
+  },
+  {
+   "path": "assets/render/model.json",
+   "bytes": 6921,
+   "hash": "e88dee106654"
+  },
+  {
+   "path": "assets/servo.json",
+   "bytes": 404,
+   "hash": "03ef1830938f"
+  }
+ ],
+ "mujoco_js": "6ab204c4c51d"
+}
